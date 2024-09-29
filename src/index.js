@@ -19,6 +19,11 @@ function generateRecipie(event) {
 
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let recipieElement = document.querySelector("#recipie");
+  recipieElement.classList.remove("hidden");
+  recipieElement.innerHTML = `<div class="blink">
+    One moment please, generating a nice recepy for you...</div>`;
+
   console.log("generating recipie");
   console.log(`prompt: ${prompt}`);
   console.log(`context: ${context}`);
