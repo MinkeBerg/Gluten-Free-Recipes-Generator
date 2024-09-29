@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>The AI Gluten Free Recipes Generator</title>
   </head>
@@ -14,7 +15,7 @@
       </header>
 
       <main>
-        <form>
+        <form id="recipie-generator-form">
           <input
             type="text"
             placeholder="What do you want to eat?"
@@ -26,11 +27,7 @@
           <input type="submit" class="button" />
         </form>
 
-        <div class="recipie">
-          Here will come the gluten free recipie
-          <br />
-          Here will come the gluten free recipie
-        </div>
+        <div class="recipie" id="recipie"></div>
       </main>
 
       <footer>
